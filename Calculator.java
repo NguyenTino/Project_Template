@@ -146,8 +146,11 @@ public class Calculator extends JFrame {
                 result *= x;
                 break;
             case "/":
-                if (x!=0)result /=x;
-                else display.setText("Loi: Chia cho 0");
+                if (x != 0) {
+                    result /= x;
+                } else {
+                    display.setText("Loi: Chia cho 0");
+                }
                 break;
             case "=":
                 result = x;
